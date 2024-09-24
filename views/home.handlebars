@@ -1,0 +1,15 @@
+<h2>Acervo SENAI</h2>
+<div class="books-container">
+    {{#each books}}
+        <div>
+            <p>
+                ID - {{this.id}}
+            </p>  
+            <h3>
+                {{this.title}}
+            </h3>  
+            <p>Uma obra escrita em {{this.qtpages}} páginas</p>
+            <a href="/book/{{this.id}}">Acessar</a>
+        </div>
+    {{/each}}
+</div>
